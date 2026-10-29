@@ -516,6 +516,36 @@ main .contact .content-copy {
   margin: 0;
 }
 
+main .social-strip {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 0;
+  padding: 1rem;
+}
+main .social-strip .social-strip__window {
+  overflow: hidden;
+}
+main .social-strip .social-strip__track {
+  display: flex;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+}
+main .social-strip span {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-family: "Third_font", sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+}
+main .social-strip span::after {
+  content: "·";
+  margin-inline: 1.25rem;
+}
+
 @media (min-width: 900px) {
   main section.view1 {
     flex-direction: row;
@@ -591,5 +621,8 @@ main .contact .content-copy {
   }
   main .contact {
     padding: 1rem 2rem;
+  }
+  main .social-strip {
+    padding-inline: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

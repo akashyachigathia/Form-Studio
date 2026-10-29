@@ -556,6 +556,41 @@ main .contact {
 }
 
 
+main .social-strip {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 0;
+  padding: 1rem;
+
+  .social-strip__window {
+    overflow: hidden;
+  }
+
+  .social-strip__track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-family: "Third_font", sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #a3a3a3;
+
+    &::after {
+      content: "·";
+      margin-inline: 1.25rem;
+    }
+  }
+}
+
+
+
 @media (min-width: 900px) {
   main {
     section.view1 {
@@ -654,4 +689,9 @@ main .contact {
 main .contact {
   padding: 1rem 2rem;
 }
+
+ main .social-strip {
+    padding-inline: 2rem;
+  }
+
 }
